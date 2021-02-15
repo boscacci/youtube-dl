@@ -979,6 +979,10 @@ class YoutubeDL(object):
 
         ie_entries = ie_result['entries']
 
+        n_videos = len(list(ie_entries))
+        print(f"N Videos: {n_videos}")
+        return n_videos
+
         def make_playlistitems_entries(list_ie_entries):
             num_entries = len(list_ie_entries)
             return [
